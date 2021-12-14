@@ -1,8 +1,8 @@
 import itemsTemplate from '../templates/gallery-items.hbs';
-import menuItem from '../menu.json';
+import menuElement from '../menu.json';
 
 const galleryRef = document.querySelector('.js-menu');
 
-const markup = itemsTemplate(menuItem).trim();
+const markup = itemsTemplate(menuElement).trim();
 
 galleryRef.insertAdjacentHTML('beforeend', markup);

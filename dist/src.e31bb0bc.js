@@ -2202,31 +2202,31 @@ const templateFunction = _handlebars.default.template({
           "column": 37
         }
       }
-    }) : helper)) + "</h2>\r\n     \r\n      <span class=\"card__price\">" + alias4((helper = (helper = lookupProperty(helpers, "price") || (depth0 != null ? lookupProperty(depth0, "price") : depth0)) != null ? helper : alias2, typeof helper === alias3 ? helper.call(alias1, {
+    }) : helper)) + "</h2>\r\n     \r\n      <span class=\"card__price\">\r\n        <i class=\"material-icons\">monetization_on</i>\r\n        " + alias4((helper = (helper = lookupProperty(helpers, "price") || (depth0 != null ? lookupProperty(depth0, "price") : depth0)) != null ? helper : alias2, typeof helper === alias3 ? helper.call(alias1, {
       "name": "price",
       "hash": {},
       "data": data,
       "loc": {
         "start": {
-          "line": 7,
-          "column": 32
+          "line": 9,
+          "column": 8
         },
         "end": {
-          "line": 7,
-          "column": 41
+          "line": 9,
+          "column": 17
         }
       }
-    }) : helper)) + " </span>\r\n      <p class=\"card__descr\">" + alias4((helper = (helper = lookupProperty(helpers, "description") || (depth0 != null ? lookupProperty(depth0, "description") : depth0)) != null ? helper : alias2, typeof helper === alias3 ? helper.call(alias1, {
+    }) : helper)) + " кредитов</span>\r\n      <p class=\"card__descr\">" + alias4((helper = (helper = lookupProperty(helpers, "description") || (depth0 != null ? lookupProperty(depth0, "description") : depth0)) != null ? helper : alias2, typeof helper === alias3 ? helper.call(alias1, {
       "name": "description",
       "hash": {},
       "data": data,
       "loc": {
         "start": {
-          "line": 8,
+          "line": 10,
           "column": 29
         },
         "end": {
-          "line": 8,
+          "line": 10,
           "column": 44
         }
       }
@@ -2238,15 +2238,15 @@ const templateFunction = _handlebars.default.template({
       "data": data,
       "loc": {
         "start": {
-          "line": 10,
+          "line": 12,
           "column": 6
         },
         "end": {
-          "line": 14,
+          "line": 16,
           "column": 15
         }
       }
-    })) != null ? stack1 : "") + "       </ul>\r\n    <button class=\"button\">В корзину</button>\r\n    </div>\r\n  </li>\r\n";
+    })) != null ? stack1 : "") + "       </ul>\r\n    <button class=\"button card__button\">\r\n      <i class=\"material-icons button__icon\">\r\n        shopping_cart\r\n      </i>В корзину</button>\r\n    </div>\r\n  </li>\r\n";
   },
   "2": function (container, depth0, helpers, partials, data) {
     return "       \r\n          <li class=\"tag-list__item\">" + container.escapeExpression(container.lambda(depth0, depth0)) + "</li>      \r\n        \r\n";
@@ -2274,7 +2274,7 @@ const templateFunction = _handlebars.default.template({
           "column": 0
         },
         "end": {
-          "line": 20,
+          "line": 25,
           "column": 9
         }
       }
@@ -2343,7 +2343,7 @@ module.exports = [{
   "price": 240,
   "ingredients": ["Круглый рис", "Мини цукини", "Тертый имбирь", "Грибы шиитаке", "Соевый соус", "Кунжутное масло"]
 }];
-},{}],"js/templating.js":[function(require,module,exports) {
+},{}],"js/markup.js":[function(require,module,exports) {
 "use strict";
 
 var _galleryItems = _interopRequireDefault(require("../templates/gallery-items.hbs"));
@@ -2430,10 +2430,10 @@ module.hot.accept(reloadCSS);
 },{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
-require("./js/templating");
+require("./js/markup");
 
 require("./sass/main.scss");
-},{"./js/templating":"js/templating.js","./sass/main.scss":"sass/main.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./js/markup":"js/markup.js","./sass/main.scss":"sass/main.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -2461,7 +2461,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "28199" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "6266" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

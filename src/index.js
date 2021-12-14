@@ -1,2 +1,2 @@
-import './js/templating';
+import './js/markup';
 import './sass/main.scss';

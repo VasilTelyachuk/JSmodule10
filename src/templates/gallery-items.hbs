@@ -4,7 +4,9 @@
       <img src="{{image}}" class="card__image" alt="{{name}}">
       <h2 class="card__name">{{name}}</h2>
      
-      <span class="card__price">{{price}} </span>
+      <span class="card__price">
+        <i class="material-icons">monetization_on</i>
+        {{price}} кредитов</span>
       <p class="card__descr">{{description}}</p>
        <ul class="tag-list">
       {{#each ingredients}}   
@@ -14,7 +16,10 @@
       {{/each}}
        </ul>
       {{!-- <p class=""></p> --}}
-    <button class="button">В корзину</button>
+    <button class="button card__button">
+      <i class="material-icons button__icon">
+        shopping_cart
+      </i>В корзину</button>
     </div>
   </li>
 {{/each}}
